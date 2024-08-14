@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>luqmanfadillahs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Raleway:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/DSC01670 (2).jpg">
+    <style>
+        body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1f1f1f, #3a3a3a);
+    color: #e0e0e0;
+    position: relative;
+    overflow-x: hidden;
+    padding-top: 80px; 
+}
+
+header {
+    background-color: #111;
+    color: #219ebc;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    border-bottom: 2px solid #219ebc;
+    transition: background-color 0.3s ease;
+    animation: slideInHeader 1s ease-out;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+nav {
+    margin: 10px 0;
+}
+
+nav a {
+    color: #219ebc;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    color: #e0e0e0;
+    transform: scale(1.1);
+}
+
+.container {
+    width: 80%;
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+    animation: fadeInContainer 2s ease-in;
+    max-width: 1200px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-section, .about-section, .contact-section {
+    text-align: center;
+}
+
+.profile-pic {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    display: block;
+    margin: 20px auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 0;
+    color: #219ebc;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+h2:hover {
+    color: #e0e0e0;
+    transform: scale(1.1);
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 15px 0;
+}
+
+a {
+    color: #219ebc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #e0e0e0;
+    text-decoration: underline;
+}
+
+.contact-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.contact-icons a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #e0e0e0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease, transform 0.3s ease, background 0.3s ease;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+}
+
+.contact-icons a:hover {
+    color: #e0e0e0;
+    transform: scale(1.1);
+}
+
+.contact-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+table {
+    width: 100%;
+    margin: 30px 0;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #219ebc;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #219ebc;
+    color: #e0e0e0;
+}
+
+td {
+    background-color: #333;
+}
+
+@keyframes slideInHeader {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+}
+
+@keyframes fadeInContainer {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+@media (max-width: 768px) {
+    .contact-icons a {
+        width: 40px;
+        height: 40px;
+    }
+    .contact-icons img {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>INTRODUCTION</h1>
+        <nav>
+            <a href="#home" class="scroll-link">Home</a>
+            <a href="#about" class="scroll-link">About</a>
+            <a href="#contact" class="scroll-link">Contact</a>
+        </nav>
+    </header>
+    <section id="home" class="container home-section">
+        <img src="assets/DSC01670 (2).jpg" alt="Foto Profil" class="profile-pic">
+        <h2>Welcome!</h2>
+        <p>Halo! Nama saya Luqman Fadillah Santoso. Saya seorang mahasiswa ilmu komputer IPB University angkatan 60. Saya sangat tertarik dengan teknologi terbaru dan selalu berusaha untuk meningkatkan keterampilan saya di bidang ini.</p>
+    </section>
+    <section id="about" class="container about-section">
+        <h2>About Me</h2>
+        <table>
+            <tr>
+                <th>Informasi</th>
+                <th>Detail</th>
+            </tr>
+            <tr>
+                <td>Nama Lengkap</td>
+                <td>Luqman Fadillah Santoso</td>
+            </tr>
+            <tr>
+                <td>Nama Panggilan</td>
+                <td>Luqman/Man</td>
+            </tr>
+            <tr>
+                <td>NIM</td>
+                <td>G6401231136</td>
+            </tr>
+            <tr>
+                <td>Tempat/Tanggal Lahir</td>
+                <td>Lumajang, 15 Juni 2005</td>
+            </tr>
+            <tr>
+                <td>Asal Daerah</td>
+                <td>Kabupaten Tangerang</td>
+            </tr>
+            <tr>
+                <td>Alamat Kost/Kontrakan/Asrama</td>
+                <td>Dramaga Cantik Blok X11</td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>Laki-laki</td>
+            </tr>
+            <tr>
+                <td>Agama</td>
+                <td>Islam</td>
+            </tr>
+            <tr>
+                <td>Hobi</td>
+                <td>Bermain Game, Travelling, dan Badminton</td>
+            </tr>
+        </table>
+    </section>
+    <section id="contact" class="container contact-section">
+        <h2>Lets Connect</h2>
+        <div class="contact-icons">
+            <a href="https://www.instagram.com/luqmanfadillah" target="_otwww">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram Icon">
+            </a>
+            <a href="https://line.me/ti/p/il4MJ2rN-j" target="otwww">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/LINE_logo.svg/225px-LINE_logo.svg.png" alt="Line Icon">
+            </a>
+            <a href="https://www.linkedin.com/in/luqmanfadillahs" target="_otwww">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn Icon">
+            </a>
+            <a href="mailto:luqmanfadillah@apps.ipb.ac.id">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email Icon">
+            </a>
+            <a href="https://wa.me/+6281212812361" target="otwww">
+                <img src="https://www.elfann.com/build/images/whatsapp.png" alt="WhatsApp Icon">
+            </a>
+        </div>
+    </section>
+    <script>
+        document.querySelectorAll('.scroll-link').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
